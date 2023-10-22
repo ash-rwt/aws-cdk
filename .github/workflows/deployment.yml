@@ -3,8 +3,8 @@ name: Deploy CDK
 on:
   push:
     branches: 
-      - develop
-  
+      - main
+
   pull_request:
     branches:
       - main
@@ -13,8 +13,9 @@ on:
 
 jobs:
   aws_cdk:
-    if :github.event.pull_request.merged == true || github.even == "push":
-      runs_on: ubuntu-latest
+    if: github.event.pull_request.merged == true || github.even == 'push'
+    runs_on: ubuntu-latest
+    
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
