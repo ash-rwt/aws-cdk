@@ -1,0 +1,26 @@
+{
+    "name": "static-site",
+    "version": "1.0.0",
+    "description": "Infrastructure for an HTTPS static site using s3 and cloudfront",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "cdk": "cdk"
+    },
+    "author": {
+        "name": "Ashish R",
+        "url": "https://www.linkedin.com/in/ashrwt/",
+        "organization": false
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^10.17.60",
+        "aws-cdk": "*",
+        "typescript": "~5.1.6"
+    },
+    "dependencies": {
+        "aws-cdk-lib": "^2.0.0",
+        "constructs": "^10.0.0",
+        "path": "^0.12.7"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "types": ["node"],
+        "lib": [
+            "es2017",
+            "es2017.object",
+            "ES2017.string",
+            "dom"
+        ],
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false
+    },
+    "include": [
+        "./*.ts"
+    ],
+    "exclude": [
+        ".git",
+        "node_modules"
+    ]
+}
